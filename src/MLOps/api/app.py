@@ -12,7 +12,7 @@ def get_vector_db_path():
     # Try multiple possible paths
     possible_paths = [
         Path("model/gemini-rag-small"),  # Local development
-        Path("/app/model/gemini-rag-small"),  # Railway default
+        Path("/app/gemini-rag-small"),  # Railway default
         Path("./model/gemini-rag-small"),  # Relative path
     ]
     
@@ -153,4 +153,5 @@ def start_server():
     )
 
 if __name__ == "__main__":
+
     start_server()
