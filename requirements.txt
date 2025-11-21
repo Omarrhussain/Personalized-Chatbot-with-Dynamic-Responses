@@ -1,0 +1,12 @@
+streamlit
+google-generativeai
+langchain
+langchain-community>=0.0.10
+faiss-cpu
+sentence-transformers
+fastapi
+uvicorn
+pydantic
+requests
+pandas
+numpy
