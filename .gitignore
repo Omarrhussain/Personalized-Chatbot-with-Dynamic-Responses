@@ -20,6 +20,7 @@ embeddings/
 # API keys and configurations - ⚠️ KEEP THESE IN GIT FOR DEPLOYMENT
 # config/api_keys.py                    # ← REMOVE THIS LINE (need for deployment)
 config/__pycache__/
+config/api_keys.py
 *.env
 .env
 .env.local
@@ -109,4 +110,5 @@ docs/_build/
 
 # MLOps
 mlruns/
+
 monitoring/
