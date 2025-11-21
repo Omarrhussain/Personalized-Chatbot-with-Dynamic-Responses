@@ -35,7 +35,7 @@ text
 
 1. **Clone the repository**
 bash
-git clone https://github.com/Omarrhussain/Personalized_Chatbot_with_Dynamic_Responses.git
+git clone https://github.com/Omarrhussain/Personalized-Chatbot-with-Dynamic-Responses.git
 cd Personalized_Chatbot
 Create virtual environment
 
