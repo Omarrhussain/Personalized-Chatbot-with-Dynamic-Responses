@@ -1,35 +1,47 @@
 # 🤖 Personalized RAG Chatbot
 
-A sophisticated Retrieval-Augmented Generation (RAG) chatbot powered by Google Gemini AI, featuring both local and cloud deployment options with FastAPI backend and Streamlit frontend.
+A Retrieval-Augmented Generation (RAG) chatbot powered by Google Gemini AI, supporting both local and cloud deployment. The system integrates a FastAPI backend, a Streamlit frontend, and dynamic vector-based retrieval for highly contextual and accurate responses.
 
-## 🚀 Features
+# 🚀 Features
 
-- **Dual Deployment**: Run locally with large vector databases or deploy to cloud with optimized small databases
-- **RAG Architecture**: Enhanced responses using retrieved context from knowledge base
-- **Conversation History**: Maintains context across chat sessions
-- **Multiple UI Options**: Streamlit interface for both local and cloud usage
-- **RESTful API**: FastAPI backend with comprehensive endpoints
+Dual Deployment Modes:
+-Local mode: Uses a large vector database for maximum accuracy
+-Cloud mode: Uses a small optimized vector database for lightweight deployment
+
+RAG Architecture:
+- Retrieves context from a custom AI/ML knowledge base
+-Conversation History
+-Maintains memory across chat sessions
+
+Multiple User Interfaces:
+- Local Streamlit app
+- Cloud Streamlit app
+
+RESTful API:
+- Clean, documented API built with FastAPI
 
 ## 🏗️ Project Structure
 Personalized_Chatbot/
 ├── src/
-│ ├── MLOps/
-│ │ └── api/
-│ │ └── app.py # FastAPI application
-│ └── model/
-│ └── gemini_rag_system.py # RAG system core logic
+│   ├── MLOps/
+│   │   └── api/
+│   │       └── app.py                 # FastAPI core application
+│   └── model/
+│       └── gemini_rag_system.py       # Main RAG logic
+│
 ├── model/
-│ ├── gemini-rag/ # Large local vector database
-│ └── gemini-rag-small/ # Small cloud-optimized database
+│   ├── gemini-rag/                    # Large local vector database
+│   └── gemini-rag-small/              # Cloud-optimized database
+│
 ├── config/
-│ └── api_keys.py # API keys configuration
-├── api_server.py # Local API server runner
-├── streamlit_app.py # Local Streamlit interface
-├── streamlit_cloud.py # Cloud Streamlit interface
-├── requirements.txt # Python dependencies
-└── railway.json # Railway deployment config
+│   └── api_keys.py                    # API key storage
+│
+├── api_server.py                      # Local API server
+├── streamlit_app.py                   # Local Streamlit interface
+├── streamlit_cloud.py                 # Cloud Streamlit interface
+├── requirements.txt                   # Dependencies
+└── railway.json                       # Railway deployment configuration
 
-text
 
 ## 🛠️ Installation
 
@@ -51,9 +63,9 @@ Set up API keys
 Get Google Gemini API key from Google AI Studio
 
 Add to config/api_keys.py:
-
 python
 GEMINI_API_KEY = "your_actual_api_key_here"
+
 🎯 Quick Start
 Option 1: Local Development
 Start the API server (Terminal 1):
@@ -71,12 +83,10 @@ Streamlit UI: http://localhost:8501
 API Docs: http://localhost:8000/docs
 
 Option 2: Cloud Deployment
+
 Deploy to Railway:
-
 Connect your GitHub repo to Railway
-
 Add GEMINI_API_KEY environment variable
-
 Railway automatically deploys on git push
 
 Use cloud Streamlit app:
