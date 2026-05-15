@@ -1,0 +1,21 @@
+# ── Core AI ──────────────────────────────
+google-generativeai
+langchain
+langchain-community>=0.0.10
+langchain-huggingface
+
+# ── Vector DB & Embeddings ───────────────
+faiss-cpu
+sentence-transformers
+
+# ── API Server ───────────────────────────
+fastapi
+uvicorn
+
+# ── Data Models ──────────────────────────
+pydantic
+
+# ── Utilities ────────────────────────────
+requests
+pandas
+numpy
